@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import buyIceCream from './iceCream/iceCreamActions';
+import buyIceCream from "../redux/iceCream/iceCreamActions";
 
 function IceCreamContainer(props) {
   return (
@@ -22,4 +22,7 @@ const matchDispatchToProps = (dispatch) => {
     buyIceCream: () => dispatch(buyIceCream()),
   };
 };
-export default connect(mapStateToProps, matchDispatchToProps)(IceCreamContainer);
+export default connect(
+  mapStateToProps,
+  matchDispatchToProps
+)(IceCreamContainer);

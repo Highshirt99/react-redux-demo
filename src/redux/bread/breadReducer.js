@@ -4,7 +4,7 @@ const initialState = {
     numOfBreads: 30
 }
 
-const BreadReducer = (state = initialState, action) =>{
+const breadReducer = (state = initialState, action) =>{
 switch(action.type){
     case BUY_BREAD: return{
         ...state,
@@ -15,4 +15,4 @@ switch(action.type){
 }
 }
 
-export default BreadReducer
+export default breadReducer
